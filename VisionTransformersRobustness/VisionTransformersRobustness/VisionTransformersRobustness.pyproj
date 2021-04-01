@@ -1,0 +1,87 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>493ac638-40ea-4422-a73c-6815c11415ba</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>VisionTransformersRobustness.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>VisionTransformersRobustness</Name>
+    <RootNamespace>VisionTransformersRobustness</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|ML2020</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttackWrappersAdaptiveBlackBox.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackWrappersRayS.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackWrappersSAGA.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackWrappersWhiteBoxP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BigTransferModels.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataLoaderGiant.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManagerPytorch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefaultMethods.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModelPlus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResNetPytorch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShuffleDefense.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformerConfigs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformerModels.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformerResNet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VGGPytorch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisionTransformersRobustness.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|ML2020" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
