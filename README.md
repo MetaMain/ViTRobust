@@ -11,7 +11,7 @@ We provide attack code for the Self-Attention Gradient Attack (SAGA), the Adapti
 
 <ol>
   <li>Install the packages listed in the Software Installation Section (see below).</li>
-  <li>Download the "Models" from the Google Drive link listed in the Models Section.</li>
+  <li>Download the models from the Google Drive link listed in the Models Section.</li>
   <li>Move the Models folder into the directory ".\VisionTransformersRobustness\VisionTransformersRobustness"</li>
   <li>Open the VisionTransformersRobustness.sln file in the Python development of your choice. Choose one of the attack lines and uncomment it. Run the main.</li>
 </ol>
