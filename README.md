@@ -1,6 +1,6 @@
 # On the Robustness of Vision Transformers
 
-We provide code for attacking a single Vision Transformer (ViT-L-16), a Big Transfer Model (BiT-M-R101x3) or a combination (ViT + BiT) defense presented in the original paper: https://arxiv.org/abs/2104.02610.
+We provide code for attacking a single Vision Transformer (ViT-L-16), a Big Transfer Model (BiT-M-R101x3) or a combination (ViT + BiT) defense presented in the original paper: https://arxiv.org/abs/2104.02610 with corresponding video: https://youtu.be/pcYoymda49c.
 All attacks provided here are done on CIFAR-10 using PyTorch.
 With the proper parameter selection and models, this same code can also be easily re-tooled for CIFAR-100 and ImageNet. 
 Each attack can be run by uncommenting one of the lines in the main. 
