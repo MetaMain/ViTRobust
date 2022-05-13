@@ -28,7 +28,7 @@ def AdaptiveAttack(saveTag, device, oracle, syntheticModel, numIterations, epoch
     #Next run the attack 
     decayFactor = 1.0
     numSteps = 10 
-    epsStep = epsForAttacks/numIterations
+    epsStep = epsForAttacks/numSteps
     advLoaderMIM = AttackWrappersWhiteBoxP.MIMNativePytorch(device, valLoader, syntheticModel, decayFactor, epsForAttacks, epsStep, numSteps, clipMin, clipMax, targeted = False)
     torch.save(advLoaderMIM, saveDir+"//AdvLoaderMIM")
     torch.cuda.empty_cache()
