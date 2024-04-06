@@ -37,7 +37,7 @@ We provide the following models:
   <li>Google's Pretrained ViT-B-32</li>
 </ul>
 
-The models can be downloaded here: https://drive.google.com/drive/folders/1VpbvFPAKMw4mpRJRblJcTwwIsC5A_A0r?usp=sharing
+The models can be downloaded here: https://uconn-my.sharepoint.com/:f:/g/personal/kaleel_mahmood_uconn_edu/EgkVWxG7wb5FlUkzDRhFMC4B_LawJR0cBsn92GZeyZ3lDg?e=pSS3QK
 The ViT or BiT-M models are necessary to run any of the attacks. The ViT-B-32 model from Google is only needed for the Adapative attack, as it is used as the starting synthetic model.
 
 
